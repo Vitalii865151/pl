@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka języka polskiego</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    
+    <a href="/index.html" style="margin: 5px;text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Strona główna
+    </a>
+    <a href="/alphabet.html" style="margin: 5px;text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Alfabet z transkrypcją
+    </a>
+    <a href="/test.html" style="margin: 5px;text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Próba alfabetu
+    </a>
+    <a href="/words.html" style="margin: 5px;text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Słowa
+    </a>
+    <a href="/test2.html" style="margin: 5px; text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Próba słowa
+    </a>
+    <a href="/historie.html" style="margin: 5px; text-decoration: none; padding: 10px 20px; background-color: blue; color: white; border-radius: 5px; display: inline-block;">
+        Historie
+    </a>
+
+
+    
+    <div class="bodyn">
+        <h1>Próba słowa </h1><br><br><br>
+        <button onclick="showRandomLetter()">Zacznij losowo</button>
+        <div class="letter" id="letter"></div>
+
+        
+        <script>
+            const letters = ['Filar', 'Sklep', 'Pokój', 'Ściana','Wspaniała', 'Sprawia', 'Spotkać', 'Sarny', 'Wiewiórki', 'Spacer', 'Troska' ];
+            let remainingLetters = [...letters];
+
+            function showRandomLetter() {
+                if (remainingLetters.length === 0) {
+                    alert('All letters are done! Restarting the list.');
+                    remainingLetters = [...letters];
+                }
+
+                const randomIndex = Math.floor(Math.random() * remainingLetters.length);
+                const randomLetter = remainingLetters.splice(randomIndex, 1)[0];
+                document.getElementById('letter').textContent = randomLetter;
+            }
+        </script>
+</body>
+</html>
