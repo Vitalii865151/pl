@@ -26,6 +26,16 @@ button {
     font-size: 24px;
     margin-top: 20px;
 }
+
+.button_start {
+    margin: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+}
     
 .word {
     cursor: pointer;
