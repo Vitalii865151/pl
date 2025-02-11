@@ -70,6 +70,7 @@ button {
 }
 
 .button_start {
+    font-size: 19px;
     margin: 5px;
     text-decoration: none;
     padding: 10px 20px;
@@ -83,4 +84,17 @@ button {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 300px;
+    margin: 20px auto;
+}
+.futer {
+    width: 10px;
+    height: 20px;
 }
