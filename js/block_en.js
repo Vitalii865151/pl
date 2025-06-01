@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     header.innerHTML = `
         <div class="header-menu">
             <a href="/pl/en/index_en.html" class="button_start">Home Page</a>
-            <a href="/pl/zasady.html" class="button_start">Rules</a>
+            <a href="/pl/en/zasady_en.html" class="button_start">Rules</a>
             <a href="/pl/alphabet.html" class="button_start">Alphabet with Transcription</a>
             <a href="/pl/alphabet2.html" class="button_start">Alphabet Practice</a>
             <a href="/pl/words.html" class="button_start">Words</a>
             <a href="/pl/words2.html" class="button_start">Word Practice</a>
-            <a href="/pl/opis.html" class="button_start">Description</a>
+            <a href="/pl/en/music_lyrics.html" class="button_start">Description</a>
             <a href="/pl/dialogi.html" class="button_start">Dialogues</a>
             <a href="/pl/historie.html" class="button_start">Stories</a>             
         </div>
