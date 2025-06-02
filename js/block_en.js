@@ -23,13 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="header-menu">
             <a href="/pl/en/index_en.html" class="button_start">Home Page</a>
             <a href="/pl/en/zasady_en.html" class="button_start">Rules</a>
-            <a href="/pl/alphabet.html" class="button_start">Alphabet with Transcription</a>
-            <a href="/pl/alphabet2.html" class="button_start">Alphabet Practice</a>
-            <a href="/pl/words.html" class="button_start">Words</a>
-            <a href="/pl/words2.html" class="button_start">Word Practice</a>
-            <a href="/pl/en/music_lyrics.html" class="button_start">Description</a>
+            <a href="/pl/en/alphabet_en.html" class="button_start">Alphabet with Transcription</a>
+            <a href="/pl/en/alphabet2_en.html" class="button_start">Alphabet Practice</a>
+            <a href="/pl/en/words_en.html" class="button_start">Words</a>
+            <a href="/pl/en/words2_en.html" class="button_start">Word Practice</a>
+            <a href="/pl/en/music/music_lyrics_en.html" class="button_start">Music</a>
+            <a href="/pl/en/opis_en.html" class="button_start">Description</a>
             <a href="/pl/en/dialogi_en.html" class="button_start">Dialogues</a>
-            <a href="/pl/historie.html" class="button_start">Stories</a>             
+            <a href="/pl/en/historie_en.html" class="button_start">Stories</a>             
         </div>
     `;
     content.insertAdjacentElement("afterbegin", header);

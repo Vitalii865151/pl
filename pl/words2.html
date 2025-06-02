@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nauka języka polskiego</title>
+    <link rel="stylesheet" href="/pl/css/styles.css">
+</head>
+<body>
+    <header>
+        <script src="/pl/js/block.js"></script>
+    </header>
+
+    
+    <div class="bodyn">
+        <h1>Próba słowa </h1>
+        <button onclick="showRandomLetter()">Zacznij losowo</button>
+        <div class="letter" id="letter"></div>
+        <script>
+            const letters = ['Filar', 'Sklep', 'Pokój', 'Ściana','Wspaniała', 'Sprawia', 'Spotkać', 'Sarny', 'Wiewiórki', 'Spacer', 'Troska' ];
+            let remainingLetters = [...letters];
+            function showRandomLetter() {
+                if (remainingLetters.length === 0) {
+                    alert('All letters are done! Restarting the list.');
+                    remainingLetters = [...letters];
+                }
+                const randomIndex = Math.floor(Math.random() * remainingLetters.length);
+                const randomLetter = remainingLetters.splice(randomIndex, 1)[0];
+                document.getElementById('letter').textContent = randomLetter;
+            }
+        </script>
+</body>
+</html>

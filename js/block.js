@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
     header.innerHTML = `
         <div class="header-menu">
             <a href="/pl/index.html" class="button_start">Strona główna</a>
-            <a href="/pl/zasady.html" class="button_start">Zasady</a>
-            <a href="/pl/alphabet.html" class="button_start">Alfabet z transkrypcją</a>
-            <a href="/pl/alphabet2.html" class="button_start">Próba alfabetu</a>
-            <a href="/pl/words.html" class="button_start">Słowa</a>
-            <a href="/pl/words2.html" class="button_start">Próba słowa</a>
-            <a href="/pl/opis.html" class="button_start">Opis</a>
-            <a href="/pl/dialogi.html" class="button_start">Dialogi</a>
-            <a href="/pl/historie.html" class="button_start">Historie</a>
+            <a href="/pl/pl/zasady.html" class="button_start">Zasady</a>
+            <a href="/pl/pl/alphabet.html" class="button_start">Alfabet z transkrypcją</a>
+            <a href="/pl/pl/alphabet2.html" class="button_start">Próba alfabetu</a>
+            <a href="/pl/pl/words.html" class="button_start">Słowa</a>
+            <a href="/pl/pl/words2.html" class="button_start">Próba słowa</a>
+            <a href="/pl/pl/opis.html" class="button_start">Opis</a>
+            <a href="/pl/pl/dialogi.html" class="button_start">Dialogi</a>
+            <a href="/pl/pl/historie.html" class="button_start">Historie</a>
         </div>
     `;
     content.insertAdjacentElement("afterbegin", header);
