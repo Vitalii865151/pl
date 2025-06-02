@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <a href="/pl/words.html" class="button_start">Words</a>
             <a href="/pl/words2.html" class="button_start">Word Practice</a>
             <a href="/pl/en/music_lyrics.html" class="button_start">Description</a>
-            <a href="/pl/dialogi.html" class="button_start">Dialogues</a>
+            <a href="/pl/en/dialogi_en.html" class="button_start">Dialogues</a>
             <a href="/pl/historie.html" class="button_start">Stories</a>             
         </div>
     `;
