@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Страница 1</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-    }
-    iframe {
-      border: 1px solid #ccc;
-      width: 270px;
-      height: 370px;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Ad Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .ad-block {
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 320px;
+            background: #f9f9f9;
+        }
+        h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <h1>Ифрейм</h1>
-  <iframe src="2.html" frameborder="0"></iframe>
+
+<div class="ad-block">
+    <h2>300x250 (iframe)</h2>
+    <script type="text/javascript">
+        atOptions = {
+            'key': '3abc433ba0ab3e7e133c376fb65ee87d',
+            'format': 'iframe',
+            'height': 250,
+            'width': 300,
+            'params': {}
+        };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/3abc433ba0ab3e7e133c376fb65ee87d/invoke.js"></script>
+</div>
+
+<div class="ad-block">
+    <h2>Native Banner (Async)</h2>
+    <script async="async" data-cfasync="false" src="//pl27236451.profitableratecpm.com/09763c52b2bc9b9ae842f60da3205257/invoke.js"></script>
+    <div id="container-09763c52b2bc9b9ae842f60da3205257"></div>
+</div>
+
+<div class="ad-block">
+    <h2>Popunder</h2>
+    <script type='text/javascript' src='//pl27236495.profitableratecpm.com/64/c7/ca/64c7ca64ebd3eeb021f1a697abbed6ef.js'></script>
+</div>
+
+<div class="ad-block">
+    <h2>Social Bar</h2>
+    <script type='text/javascript' src='//pl27236432.profitableratecpm.com/f5/0d/ba/f50dbaae1c5969c8d8abc511f9bac1f8.js'></script>
+</div>
+
 </body>
 </html>
