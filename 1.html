@@ -1,49 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Adsterra Test</title>
+  <meta charset="UTF-8" />
+  <title>Страница 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    iframe {
+      border: 1px solid #ccc;
+      width: 270px;
+      height: 370px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Тест рекламы Adsterra</h2>
-
-  <!-- IFRAME (не всегда работает) -->
-  <h3>Баннер через iframe (300x250):</h3>
-  <div id="iframe-banner">
-    <script type="text/javascript">
-      atOptions = {
-        'key' : '3abc433ba0ab3e7e133c376fb65ee87d',
-        'format' : 'iframe',
-        'height' : 250,
-        'width' : 300,
-        'params' : {}
-      };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/3abc433ba0ab3e7e133c376fb65ee87d/invoke.js"></script>
-  </div>
-
-  <hr>
-
-  <!-- DIRECT LINK -->
-  <h3>Direct Link:</h3>
-  <a href="https://www.highperformanceformat.com/3abc433ba0ab3e7e133c376fb65ee87d/invoke.html" target="_blank">
-    <button style="padding:10px 20px;font-size:16px;">Открыть рекламу вручную</button>
-  </a>
-
-  <hr>
-
-  <!-- POPUNDER -->
-  <h3>Popunder (при клике по кнопке):</h3>
-  <button onclick="window.open('https://www.highperformanceformat.com/3abc433ba0ab3e7e133c376fb65ee87d/invoke.html','_blank')"
-          style="padding:10px 20px;font-size:16px;">
-    Открыть Popunder
-  </button>
-
-  <hr>
-
-  <!-- INTERSTITIAL -->
-  <h3>Interstitial (запускается при загрузке страницы):</h3>
-  <script type='text/javascript' src='//www.highperformanceformat.com/3abc433ba0ab3e7e133c376fb65ee87d/invoke.js'></script>
-
+  <h1>Ифрейм</h1>
+  <iframe src="2.html" frameborder="0"></iframe>
 </body>
 </html>
