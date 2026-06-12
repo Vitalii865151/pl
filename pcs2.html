@@ -20,4 +20,41 @@
                 -
                 <div class="el-date-editor el-input el-input--mini el-input--prefix el-input--suffix el-date-editor--time"><!----><input type="text" readonly="readonly" autocomplete="off" name="" placeholder="End time" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-time"></i><!----></span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon"></i><!----><!----><!----><!----></span><!----></span><!----><!----></div></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><!----></div></div><div class="el-form-item charge-table-list is-required"><!----><div class="el-form-item__content"><span class="table-index-icon charge-table-index">8</span><div class="charge-table-time-input"><div class="el-date-editor el-input el-input--mini el-input--prefix el-input--suffix el-date-editor--time"><!----><input type="text" readonly="readonly" autocomplete="off" name="" placeholder="Start time" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-time"></i><!----></span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon"></i><!----><!----><!----><!----></span><!----></span><!----><!----></div>
                 -
-                <div class="el-date-editor el-input el-input--mini el-input--prefix el-input--suffix el-date-editor--time"><!----><input type="text" readonly="readonly" autocomplete="off" name="" placeholder="End time" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-time"></i><!----></span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon"></i><!----><!----><!----><!----></span><!----></span><!----><!----></div></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><!----></div></div></form></div><div class="right-bottom-button"><button type="button" class="btn-blue normal-btn">Save</button></div></form></div></div></div></div></div></div></div></div><script src="./91.243.196.47_files/chunk-vendors.f764b06e.js.Без названия"></script><script src="./91.243.196.47_files/app.df80a79e.js.Без названия"></script></body></html>
+                <div class="el-date-editor el-input el-input--mini el-input--prefix el-input--suffix el-date-editor--time"><!----><input type="text" readonly="readonly" autocomplete="off" name="" placeholder="End time" class="el-input__inner"><span class="el-input__prefix"><i class="el-input__icon el-icon-time"></i><!----></span><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon"></i><!----><!----><!----><!----></span><!----></span><!----><!----></div></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><div><input datatype="NumberFloat4" mmlimit="-5750#5750" errormsg="Format incorrect！ " type="text" nullmsg="Cannot be empty"></div><!----></div></div></form></div><div class="right-bottom-button"><button type="button" class="btn-blue normal-btn" onclick="showVisualClick(this)">Save</button></div></form></div></div></div></div></div></div></div></div><script src="./91.243.196.47_files/chunk-vendors.f764b06e.js.Без названия"></script><script src="./91.243.196.47_files/app.df80a79e.js.Без названия"></script><script>
+function showVisualClick(buttonElement) {
+    // 1. Создаем маленькое стильное уведомление в углу или по центру
+    const notification = document.createElement('div');
+    
+    // Настройки стиля вспышки (яркий неон, чтобы было видно в окне отладки)
+    notification.style.position = 'fixed';
+    notification.style.bottom = '20px';
+    notification.style.right = '20px';
+    notification.style.backgroundColor = '#00f5d4'; // Кислотно-бирюзовый неон
+    notification.style.color = '#000000';
+    notification.style.padding = '10px 20px';
+    notification.style.borderRadius = '5px';
+    notification.style.fontWeight = 'bold';
+    notification.style.fontFamily = 'sans-serif';
+    notification.style.fontSize = '1.1rem';
+    notification.style.zIndex = '99999';
+    notification.style.boxShadow = '0 0 15px #00f5d4';
+    notification.style.transition = 'opacity 0.15s ease-out';
+    
+    // Текст уведомления (можно менять на любой)
+    notification.innerText = '⚡ [Selenium] CLICK DETECTED!';
+
+    // Добавляем на экран
+    document.body.appendChild(notification);
+
+    // 2. Сама кнопка на мгновение меняет цвет, сигнализируя о клике
+    const originalBg = buttonElement.style.backgroundColor;
+    buttonElement.style.backgroundColor = '#ff007f'; // Вспышка розовым неоном на самой кнопке
+
+    // 3. Через 300 миллисекунд всё бесследно исчезает автоматически
+    setTimeout(() => {
+        notification.style.opacity = '0'; // Плавное угасание
+        setTimeout(() => notification.remove(), 150); // Полное удаление из HTML
+        buttonElement.style.backgroundColor = originalBg; // Возвращаем кнопке родной цвет
+    }, 300);
+}
+</script></body></html>
